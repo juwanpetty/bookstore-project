@@ -1,0 +1,73 @@
+svg {
+    transition: 100ms;
+
+    &:hover {
+        color: $gray-84;
+    }
+}
+
+.navbar {
+    background: $white;
+    height: 4rem;
+    border-bottom: 1px solid rgb(237, 237, 240);
+
+    .nav-item:not(:last-child) {
+        margin-right: 2rem;
+    }
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    left: inherit;
+    right: 0;
+}
+
+.navbar-nav .nav-item:not(:last-of-type) {
+    .nav-link {
+        padding-top: 0.35rem;
+        padding-bottom: 0;
+    }
+}
+
+.user {
+    margin-right: 0.5rem;
+}
+
+#navbarDropdown {
+    padding-top: 0;
+}
+
+.js-cart-icon {
+    position: relative;
+
+    .js-cart-count {
+        top: 0;
+        right: 0;
+        position: absolute;
+        background: #FF3B30;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        @include flex(center, center);
+        transition: 75ms;
+        opacity: 0.99;
+        color: #FFFFFF;
+        font-size: 10px;
+        font-weight: bold;
+
+        &.hidden {
+            opacity: 0.01;
+        }
+    }
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: absolute;
+    top: 45px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: none;
+}
+
+.nav-link.dropdown-toggle.d-flex.align-items-center {
+    padding-bottom: 0;
+}

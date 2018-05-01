@@ -1,0 +1,15 @@
+// 1024 and smaller
+@media screen and (max-width: 1024px) {
+    nav.navbar {
+        @include flex(center, space-between !important);
+
+        .navbar-nav {
+            flex-direction: row;
+        }
+    }
+
+    .search-container {
+        position: relative;
+        margin: inherit;
+    }
+}
